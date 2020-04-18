@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Parameters: 
+  instanceType: 
+    Type: String
+    Default: t3.micro
+  ami: 
+    Type: String
+    Default: ami-076431be05aaf8080
+Resources:
+  eC2Instance1: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: !Ref ami
+      InstanceType: !Ref instanceType
+  eC2Instanc2: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: !Ref ami
+      InstanceType: !Ref instanceType
+  eC2Instance3: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: !Ref ami
+      InstanceType: !Ref instanceType
+  eC2Instance4: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: !Ref ami
+      InstanceType: !Ref instanceType
+  eC2Instance5: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: !Ref ami
+      InstanceType: !Ref instanceType
+ 
